@@ -1,7 +1,8 @@
 - name: Data types
   hosts:
+  become: yes
   vars:
-    place: Fruits Market
+    #place: Fruits Market
     frutes:
     - apple
     - grapes
@@ -9,4 +10,4 @@
   tasks:
   - name: fruits List
     ansible.builtin.debug:
-      msg: "welcome to  {{place}}", availabe {{frutes}}"
+      msg: " availabe {{frutes}}"
