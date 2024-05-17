@@ -14,8 +14,8 @@
 
 - name: variables from file
   hosts: localhost
-  vars_files:
-  - 03.variable.yml    
+  # vars_files:
+  # - 03.variable.yml    
   tasks:
   - name: varibles
     ansible.builtin.debug:
