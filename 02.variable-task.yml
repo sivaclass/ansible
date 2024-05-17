@@ -6,4 +6,4 @@
     NAME: vijay
     WIFE: sri
     ansible.builtin.debug:
-     msg: name is {{NAME}} wife name is {{}}
+     msg: name is {{NAME}} wife name is {{WIFE}}
