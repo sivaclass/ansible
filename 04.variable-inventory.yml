@@ -1,5 +1,6 @@
 - name: variables from PLAY level
   hosts: localhost
+  become: yes
   tasks:
   - name: check variables
     ansible.builtin.debug:
