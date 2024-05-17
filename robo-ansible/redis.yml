@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: downloading redis app
-    ansible.builtin.get_url:
+     ansible.builtin.dnf:
        name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
        state: present
        disable_gpg_check: true
