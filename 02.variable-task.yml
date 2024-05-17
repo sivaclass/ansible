@@ -19,4 +19,5 @@
   tasks:
   - name: varibles
     ansible.builtin.debug:
-      msg: name is {{NAME}} course name is {{COURSE}} organisation is {{ORGANISATION}}
+      msg: name is {{NAME}}, course name is {{COURSE}}, organisation is {{ORGANISATION}}
+    

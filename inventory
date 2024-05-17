@@ -1,8 +1,7 @@
 [server]
 
 
-[loclahost: var]
-
-NAME: vijay
-COURSE: aws
-ORGANISATION: santric Technology
+[localhost:vars]
+NAME="vijay"
+COURSE="aws"
+ORGANISATION="santric Technology"
