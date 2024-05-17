@@ -1,0 +1,27 @@
+- name: redis
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: downloading redis app
+    ansible.builtin.get_url:
+      url: https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+  - name: enabling redis:remi
+    ansible.builtin.service:
+      name: redis:remi-6.2
+      enabled: yes
+  - name: install redis
+    ansible.builtin.service:
+      name: redis
+      state: present
+  - name: replacing ip
+    ansible.builtin.replace:
+      regexp: '127.0.0.1'
+      replace: '0.0.0.0'     
+  - name: enabling redis
+    ansible.builtin.service:
+      name: redis
+      enabled: yes    
+  - name: start redis
+    ansible.builtin.package:
+      name: redis
+      state: started
