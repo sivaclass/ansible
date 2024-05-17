@@ -2,6 +2,5 @@
 localhost
 
 [localhost:vars]
-NAME="vijay"
-COURSE="aws"
-ORGANISATION="santric Technology"
+Course="DevOps From inventory"
+Trainer="Sivakumar"

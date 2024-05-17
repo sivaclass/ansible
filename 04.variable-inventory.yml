@@ -1,6 +1,6 @@
-- name: variables from inventory
+- name: variables from PLAY level
   hosts: localhost
   tasks:
-  - name: varibles from inventory
+  - name: check variables
     ansible.builtin.debug:
-      msg: "name is {{NAME}} course name is {{COURSE}} organisation is {{ORGANISATION}}"
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
