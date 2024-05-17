@@ -1,5 +1,5 @@
-[server]
-
+[localhost]
+localhost
 
 [localhost:vars]
 NAME="vijay"

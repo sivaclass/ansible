@@ -17,7 +17,7 @@
   # vars_files:
   # - 03.variable.yml    
   tasks:
-  - name: varibles
+  - name: varibles from inventory
     ansible.builtin.debug:
       msg: name is {{NAME}}, course name is {{COURSE}}, organisation is {{ORGANISATION}}
     
