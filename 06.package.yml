@@ -3,11 +3,11 @@
   become: yes
   tasks:
   - name: install nginx
-    vars:
-      packages:
-      - git
-      - nginx
-  - name: install packages
-    ansible.builtin.package:
-      name: {{packages}}
-      state: started
+    package:
+      name:
+        - git
+        - nginx
+      state: present  
+    
+  
+      
