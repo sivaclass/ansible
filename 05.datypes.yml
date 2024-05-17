@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   vars:
-    #place: Fruits Market
+    place: Fruits Market
     frutes:
     - apple
     - grapes
@@ -10,4 +10,4 @@
   tasks:
   - name: fruits List
     ansible.builtin.debug:
-      msg: " availabe {{frutes}}"
+      msg: " availabe {{frutes}} place is {{place}}"
