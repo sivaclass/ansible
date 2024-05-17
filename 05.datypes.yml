@@ -1,6 +1,6 @@
 - name: Data types
   hosts: localhost
-  become: yes
+  #become: yes
   vars:
     place: Fruits Market
     frutes:
