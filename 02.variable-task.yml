@@ -10,3 +10,13 @@
       WIFE: sri
     ansible.builtin.debug:
       msg: name is {{NAME}} wife name is {{WIFE}}
+
+
+- name: variables from file
+  hosts: localhost
+  vars_files:
+  - variable.yml    
+  tasks:
+  - name: varibles
+    ansible.builtin.debug:
+      msg: name is {{NAME}} course name is {{COURSE}} organisation is {{ORGANISATION}}
