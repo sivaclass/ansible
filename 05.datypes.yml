@@ -1,7 +1,7 @@
 - name: Data types
   hosts:
   vars:
-  place: Fruits Market
+    place: Fruits Market
     frutes:
     - apple
     - grapes
