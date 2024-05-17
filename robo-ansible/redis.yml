@@ -6,6 +6,7 @@
     ansible.builtin.get_url:
        name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
        state: present
+       disable_gpg_check: true
   - name: enabling redis:remi
     ansible.builtin.service:
       name: redis:remi-6.2
