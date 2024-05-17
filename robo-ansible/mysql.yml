@@ -1,0 +1,21 @@
+- name: mysql
+  hosts: mysql
+  tasks:
+  - name: disabling mongodb
+    ansible.builtin.command: dnf module disable mysql -y
+  - name: copying mangorepo
+    ansible.builtin.copy:
+      src: mysql.repo
+      dest: /etc/yum.repos.d/mysql.repo
+  - name: installing communityserver
+    ansible.builtin.package:
+      name: mysql-community-server
+      state: present
+  - name: enabling and starting mysql
+    ansible.builtin.service:
+      name: mysqld
+      state: started
+      enabled: yes    
+
+  - name: setup root password
+    ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1  
