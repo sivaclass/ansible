@@ -1,0 +1,9 @@
+# varibales at Task level
+- name: variables at task level
+  hosts: localhost
+  tasks:
+  - name: varibles
+    NAME: vijay
+    WIFE: sri
+    ansible.builtin.debug:
+     msg: name is {{NAME}} wife name is {{}}

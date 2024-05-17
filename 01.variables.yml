@@ -1,4 +1,5 @@
-- name: variable execution
+# variables at play level
+- name: variable play leavel 
   hosts: localhost
   vars: 
     NAME: vijay
