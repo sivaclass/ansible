@@ -15,6 +15,7 @@
       state: present
   - name: replacing ip
     ansible.builtin.replace:
+      path: /etc/redis/redis.conf
       regexp: '127.0.0.1'
       replace: '0.0.0.0'     
   - name: enabling redis
