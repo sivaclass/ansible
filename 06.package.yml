@@ -1,0 +1,13 @@
+- name: install nginx & git
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install nginx
+    vars:
+      packages:
+      - git
+      - nginx
+  - name: install packages
+    ansible.builtin.package:
+      name: {{packages}}
+      state: started
