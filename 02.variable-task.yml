@@ -2,8 +2,9 @@
 - name: variables at task level
   hosts: localhost
   tasks:
+  vars:
+    NAME: vijay
+    WIFE: sri
   - name: varibles
-      NAME: vijay
-      WIFE: sri
     ansible.builtin.debug:
-     msg: name is {{NAME}} wife name is {{WIFE}}
+      msg: name is {{NAME}} wife name is {{WIFE}}
