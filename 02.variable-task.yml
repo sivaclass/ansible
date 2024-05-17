@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
   - name: varibles
-    NAME: vijay
-    WIFE: sri
+      NAME: vijay
+      WIFE: sri
     ansible.builtin.debug:
      msg: name is {{NAME}} wife name is {{WIFE}}
