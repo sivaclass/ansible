@@ -2,6 +2,7 @@
 localhost
 
 [localhost:vars]
+
 NAME="vijay"
 COURSE="aws"
 ORGANISATION="santric Technology"

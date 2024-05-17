@@ -1,0 +1,8 @@
+- name: variables from inventory
+  hosts: localhost
+  # vars_files:
+  # - 03.variable.yml    
+  tasks:
+  - name: varibles from inventory
+    ansible.builtin.debug:
+      msg: name is {{NAME}}, course name is {{COURSE}}, organisation is {{ORGANISATION}}
