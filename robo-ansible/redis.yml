@@ -10,7 +10,7 @@
   - name: enabling redis:remi
     ansible.builtin.command: dnf module enable redis:remi-6.2 -y
   - name: install redis
-    ansible.builtin.service:
+    ansible.builtin.package:
       name: redis
       state: present
   - name: replacing ip
