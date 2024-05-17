@@ -10,15 +10,11 @@
     ansible.builtin.package:
       name: mongodb-org
       state: started
-  - name: enable mongod servie
-     ansible.builtin.service:
-      name: mongod
-      enabled: yes
-  - name: start mongod servie
-     ansible.builtin.service:
+  - name: start and enable mongodb
+    ansible.builtin.service:
       name: mongod
       state: started
-  - name: repalce IP
+      enabled: yes
     replace:
         path: /etc/mongod.conf
         regexp: '127.0.0.1'
