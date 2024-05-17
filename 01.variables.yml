@@ -6,4 +6,4 @@
   tasks:
   - name: variables
     ansible.builtin.debug:
-      name is: {{NAME}}, role is: {{ROLE}}
+      msg: name is {{NAME}} role is {{ROLE}}
