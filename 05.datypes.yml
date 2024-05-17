@@ -1,5 +1,5 @@
 - name: Data types
-  hosts:
+  hosts: localhost
   become: yes
   vars:
     #place: Fruits Market
