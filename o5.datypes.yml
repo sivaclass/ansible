@@ -1,0 +1,12 @@
+- name: Data types
+  hosts:
+  vars:
+  place: Fruits Market
+    frutes:
+    - apple
+    - grapes
+    - watermelon
+  tasks:
+  - name: fruits List
+    ansible.builtin.debug:
+      msg: "welcome to  {{place}}", availabe {{frutes}}"
