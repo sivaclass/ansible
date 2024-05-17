@@ -8,9 +8,7 @@
        state: present
        disable_gpg_check: true
   - name: enabling redis:remi
-    ansible.builtin.service:
-      name: redis:remi-6.2
-      enabled: yes
+    ansible.builtin.command: dnf module enable redis:remi-6.2 -y
   - name: install redis
     ansible.builtin.service:
       name: redis
