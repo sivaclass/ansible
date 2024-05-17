@@ -1,0 +1,9 @@
+- name: variable execution
+  hosts: localhost
+  vars: 
+    NAME: vijay
+    ROLE: Devops
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+      name is: {{NAME}}, role is: {{ROLE}}
