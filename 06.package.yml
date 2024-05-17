@@ -7,6 +7,7 @@
       name:
         - git
         - nginx
+        - mysql
       state: present  
     
   
