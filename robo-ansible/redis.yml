@@ -4,7 +4,8 @@
   tasks:
   - name: downloading redis app
     ansible.builtin.get_url:
-      url: https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+       name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+       state: present
   - name: enabling redis:remi
     ansible.builtin.service:
       name: redis:remi-6.2
