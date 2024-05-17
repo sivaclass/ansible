@@ -1,5 +1,5 @@
 - name: mysql
-  hosts: mysql
+  hosts: localhost
   tasks:
   - name: disabling mongodb
     ansible.builtin.command: dnf module disable mysql -y
